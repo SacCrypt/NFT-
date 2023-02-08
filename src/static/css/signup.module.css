@@ -1,0 +1,102 @@
+.outer {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding-bottom: 10em;
+}
+
+.title{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 0.5em;
+}
+
+
+.signup {
+    margin-top: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #181818;
+    flex-direction: column;
+    padding: 50px;
+    gap: 2em;
+    border-radius: 15px;
+    width: 30em;
+}
+
+.inputField input::placeholder{
+    font-family: 'Inter';
+    font-size: 16px;
+}
+
+.inputField{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    background-color: #181818;
+    border-radius: 12px;
+    padding-left: 0.5em;
+    padding-right: 1em;
+    padding-top: 2em;
+    padding-bottom: 4em;
+    width: 20em;  
+}
+
+.wrapper{
+    background: linear-gradient(180deg,
+            #d4f211,
+            #34ebde);
+    
+    padding: 0.1em;
+    border-radius: 12px;
+        }
+
+
+.inputField input:focus::placeholder{
+    color: transparent;
+    transition-delay: 100ms;
+}
+
+.inputField input{
+    border-top-style: hidden;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-bottom-style: groove;
+    outline: none;
+    background: none;
+    width: 90%;
+    padding-bottom: 1em;
+    padding-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.submit{
+    color: black;
+    font-size: 16px;
+    width: 10em;
+    align-self: center;
+    margin-top: 1em;
+    padding: 15px;
+    background: #d4f211;
+    margin-right: 0.1em;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bolder;
+    letter-spacing: 1.5px;
+    border: 2px solid black;
+}
+
+.submit:hover{
+    background-color: #eaff05;
+    color: #1c1c16;
+}
+
+.error{
+    border-bottom-color: red;
+}
+
+.alertBox{
+    color: green;
+}
